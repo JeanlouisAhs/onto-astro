@@ -1,0 +1,116 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServicesCard from '../components/ServicesCard.astro';
+import logoReference from "../../public/logo.png";
+import heroImg from "../../public/asset2.png";
+import sectionImg from "../../public/asset1.png";
+import serviceImage from "../../public/developing.svg";
+---
+<Layout title="Welcome to Astro.">
+	<main class="">
+		<!-- section : hero section -->
+		<!-- bg-blue-600 -->
+		<!-- bg-violet-800 -->
+		<section class="mt-10">
+			<div class="flex justify-between ">
+				<div class="w-[600px]">
+					<div class="mt-10 ml-5 pr-10 pt-5">
+						<div class="text-3xl font-bold text-left mt-10 mb-5">
+							The super style title make for impressing
+						</div>
+						<p class="text-base text-left mb-10">
+							Fusce eget fringilla nisl. Nam sed sapien vel diam malesuada ultricies. Sed placerat lorem id fermentum ultrices. 
+							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis diam eu 
+							massa gravida, et pellentesque nulla porta.
+						</p>	
+						<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>					
+	
+				</div>
+			</div>
+
+				<div class="w-96 mr-5">
+					<div>
+						<img src={heroImg} class="object-scale-down w-96">
+					</div>
+				</div>    
+			  </div>
+		</section>
+
+	
+
+			
+			<!-- section : Our Services  -->
+
+		<section class="my-10">
+			<div class="text-3xl font-bold text-center mt-10 text-violet-800 mb-10">Our Services</div>
+			<div class="flex flex-row justify-center space-x-10">
+				<ServicesCard title="Web Developement" subTitle="Duis a ante tellus. Sed magna mauris, tempus vitae aliquet vitae" href={serviceImage} />
+				<ServicesCard title="UX/UI Design" subTitle="Quisque accumsan ullamcorper ligula, nec pulvinar velit bibendum eget." href={serviceImage} />
+				<ServicesCard title="Technical Support" subTitle="Class aptent taciti sociosqu ad litora torquent per " href={serviceImage} />
+
+			</div>
+		</section>
+
+		<!-- another section -->
+
+		<section class="mb-10">
+			<div class="flex justify-between items-center ">
+				<div class="w-96 mr-5">
+					<div>
+						<img src={sectionImg} class="object-scale-down w-96">
+					</div>
+				</div>  	
+
+				<div class="w-[700px]">
+					<div class="mt-10 ml-5 pr-10 pt-5">
+						<div class="text-3xl font-bold text-left mt-10 text-blue-600 mb-5">
+							Sed placerat lorem id fermentum ultrices
+						</div>
+						<p class="text-base text-left mb-10">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus repellendus ea fugit dolor nam facere
+							nulla dolorem, sint aliquid aperiam sunt corrupti? Animi temporibus cupiditate saepe culpa exercitationem nesciunt praesentium?
+							Fusce eget fringilla nisl. Nam sed sapien vel diam malesuada ultricies. Sed placerat lorem id fermentum ultrices. 
+							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed lobortis diam eu 
+							massa gravida, et pellentesque nulla porta.
+						</p>	
+						<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Get Started</button>					
+	
+					</div>
+				</div>
+
+				
+			  </div>
+		</section>
+		
+			<!-- Section  : partners section -->
+
+			<section class="mt-10">
+				<div class="text-3xl font-bold text-center mt-10 text-violet-800 ">They trust us</div>
+	
+				  <div class="flex flex-row justify-center">
+					<div class="">
+						<img class="object-scale-down h-48 w-48 text-center" src={logoReference} >
+					</div>
+					<div class="">
+						<img class="object-scale-down h-48 w-48" src={logoReference}>
+					</div>
+					<div class="">
+						<img class="object-scale-down h-48 w-48" src={logoReference}>
+					</div>
+					<div class=""> 
+						<img class="object-scale-down h-48 w-48" src={logoReference}>
+					</div>
+					<div class="">
+						<img class="object-scale-down h-48 w-48" src={logoReference}>
+					</div>
+				  </div> 
+	
+			</section>
+
+			
+	</main>
+</Layout>
+
+<style>
+	
+</style>

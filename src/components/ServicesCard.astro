@@ -1,0 +1,17 @@
+---
+export interface Props {
+    title: string,
+    subTitle: string,
+    href: string,
+}
+const {href, title, subTitle} = Astro.props;
+
+---
+<div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 w-72 p-2">
+    
+    <div class="flex flex-col items-center pt-10 pb-10">
+        <img class="mb-3 w-24 h-24 rounded-full shadow-lg " src={href} />
+        <h5 class="mb-1 text-xl font-medium text-blue-600 mt-10">{title}</h5>
+        <span class="text-sm text-gray-500 dark:text-gray-400 text-center">{subTitle}</span>
+    </div>
+</div>
